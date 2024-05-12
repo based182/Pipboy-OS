@@ -3,7 +3,8 @@
 ##add bootsound function
 
 import pygame
-
+#use os library  if actual path fails
+import os
 #initiates pygame module
 
 pygame.init()
@@ -15,11 +16,13 @@ screen = pygame.display.set_mode((480, 320))
 
 
 #defines booting sound file
+#use actual path for both file location
 
 bootsound = pygame.mixer.Sound("/home/based182/Pipboy OS/sounds/bootsounda.mp3")
 
 
 #defines the bootscreen image
+#same as line 19, relative path doesnt always work.
 
 bootscreen = pygame.image.load("/home/based182/Pipboy OS/images/pipboy bootscreen 480.320.png").convert()
 
